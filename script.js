@@ -9,7 +9,7 @@ const GITHUB = {
 
 // Google Apps Script Web App URL 입력
 // ✅ Apps Script 코드를 수정한 후 새 배포 URL을 여기에 붙여넣으세요.
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzNX5w4RT_pxvKiUiguYJavqguSIFcbzwsTMfUxaz6VqmaE6eOwRY4TOryV4wCejZib/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYd-OF4f8nhU6IIYTyQwwtlsQRicr8e9fxONKDcR5iaDL46N0klLui2Pjqh9R3YUHI/exec";
 
 /*****************************************************/
 
