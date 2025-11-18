@@ -1,8 +1,8 @@
 /***** ✅ 사용자가 직접 수정해야 하는 부분 *****/
 // 깃허브 저장소 정보 입력
 const GITHUB = {
-  owner: "littledoor-ai",      // ✅ 본인 깃허브 ID
-  repo: "survey-project",       // ✅ 저장소 이름
+  owner: "diTmadl11",      // ✅ 본인 깃허브 ID
+  repo: "survey",       // ✅ 저장소 이름
   branch: "main",               // ✅ 브랜치 (보통 main)
   path: "images"                // ✅ 이미지 폴더 이름
 };
