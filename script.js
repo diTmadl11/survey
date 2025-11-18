@@ -100,7 +100,36 @@ function clearScoreSelection() {
 
 // 다음 질문
 async function nextQuestion() {
-  const radios = document.querySelectorAll('input[name="score"]');
+  function nextQuestion() {
+  const walk = document.querySelector('input[name="score_walkability"]:checked');
+  const aesthetic = document.querySelector('input[name="score_aesthetic"]:checked');
+
+  if (!walk || !aesthetic) {
+    alert("⚠️ 두 문항 모두 점수를 선택해주세요!");
+    return;
+  }
+
+  responses.push({
+    timestamp: new Date().toISOString(),
+    userID,
+    gender: participant.gender,
+    age: participant.age,
+    imageID: getImageID(selectedImages[currentImage]),
+    
+    // 저장될 두 개의 문항
+    walkability: parseInt(walk.value),
+    aesthetic: parseInt(aesthetic.value)
+  });
+
+  if (currentImage >= selectedImages.length - 1) {
+    submitSurvey();
+    return;
+  }
+
+  currentImage++;
+  loadImage();
+}
+
   let value = null;
   radios.forEach(r => { if (r.checked) value = r.value; });
   
